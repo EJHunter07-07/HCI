@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        ul, #myUL {
+            list-style-type: none;
+        }
+
+        #myUL {
+            margin: 0;
+            padding: 0;
+        }
+
+        .caret {
+            cursor: pointer;
+            -webkit-user-select: none; /* Safari 3.1+ */
+            -moz-user-select: none; /* Firefox 2+ */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none;
+        }
+
+        .caret::before {
+            content: "\25B6";
+            color: black;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Safari */'
+        transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Frage 1</h2>
+<p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>
+<p>Click on the arrow(s) to open or close the tree branches.</p>
+
+<ul id="myUL">
+    <li><span class="caret">Studieren</span>
+        <ul class="nested">
+            <li><span class="caret">Studieng&#228;nge</span>
+                <ul class="nested">
+                    <li>Bachelor</li>
+                    <li>Master</li>
+                    <li>Dual studieren</li>
+                    <li>Berufsbegleitend studieren</li>
+                    <li>Flexibel studieren</li>
+                    <li>Summer School</li>
+                </ul>
+            </li>
+            <li><span class="caret">Vor dem Studium</span>
+                <ul class="nested">
+                    <li>Schritt f&#252;r Schritt ins Studium</li>
+                    <li>Angebote f&#252;r Studieninteressierte</li>
+                    <li>Termine Studienorientierung</li>
+                    <li>Bewerbung und Zulassung</li>
+                    <li>Internationale Bewerbungen</li>
+                </ul>
+            </li>
+            <li><span class="caret">Im Studium</span>
+                <ul class="nested">
+                    <li>Infos f&#252;r Erstsemester</li>
+                    <li>Semestertermine und Fristen</li>
+                    <li>Zug&#228;nge und Portale f&#252;r Studierende</li>
+                    <li>Formales und Pr&#252;fung</li>
+                    <li>Ins Ausland gehen</li>
+                    <li>Erg&#228;nzende Angebote zum Studium</li>
+                </ul>
+            </li>
+            <li><span class="caret">Nach dem Studium</span>
+                <ul class="nested">
+                    <li>Masterstudium</li>
+                    <li>Bewerbung und Berufseinstieg</li>
+                    <li>Gr&#228;ndung und Selbstst&#228;ndigkeit</li>
+                    <li>Berufliche Weiterbildung</li>
+                    <li>Infos f&#252;r Alumni und Alumnae</li>
+                    <li>Promotionen</li>
+                </ul>
+            </li>
+            <li><span class="caret">Rund ums Studium</span>
+                <ul class="nested">
+                    <li>Studierendenleben</li>
+                    <li>Mitbestimmen & Gestalten</li>
+                    <li>Mensa & Co.</li>
+                    <li>Bibliothek</li>
+                    <li>Kultur</li>
+                    <li>Sport</li>
+                    <li>Glossar</li>
+                </ul>
+            </li>
+            <li><span class="caret">Beratung und Unterst&#252;tzung</span>
+                <ul class="nested">
+                    <li>Zentrale Studienberatung</li>
+                    <li>Pers&#246;nliche Themen</li>
+                    <li>Lernschwierigkeiten</li>
+                    <li>Zweifel am Studium</li>
+                    <li>Konflikte im Studium</li>
+                    <li>Ihr Beratungsnetzwerk an der HSB</li>
+                    <li>Studienfinazierung</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><span class="caret">Forschen</span>
+        <ul class="nested">
+            <li><span class="caret">Forschungs- und Transferprofil</span>
+                <ul class="nested">
+                    <li>Strategische Partnerschaften</li>
+                    <li>Forschungseinrichtungen</li>
+                    <li>Forschungsprojekte</li>
+                    <li>Patente</li>
+                </ul>
+            </li>
+            <li><span class="caret">Forschungcluster</span>
+                <ul class="nested">
+                    <li>Blue Science</li>
+                    <li>Digitale Transformation</li>
+                    <li>Dynamics, Tension and Extreme Events</li>
+                    <li>Lebensqualit&#228;t</li>
+                    <li>Luft- und Raumfahrt</li>
+                    <li>Region im Wandel
+                    </li>
+                </ul>
+            </li>
+            <li>Wissenschaftlicher Nachwuchs</li>
+            <li>Transfer und Kooperation</li>
+            <li>Forschungsservice</li>
+            <li>Gr&#252;ndungsservice</li>
+        </ul>
+    </li>
+    <li><span class="caret">Weiterbilden</span>
+        <ul class="nested">
+            <li><span class="caret">Themen</span>
+                <ul class="nested">
+                    <li>Wirtschaft und Management</li>
+                    <li>Digitalisierung</li>
+                    <li>Soziales</li>
+                </ul>
+            </li>
+            <li>Seminare und Zertifikate</li>
+            <li>Weiterbildende MBA und Master</li>
+        </ul>
+    </li>
+    <li><span class="caret">Die HSB</span>
+        <ul class="nested">
+            <li><span class="caret">Aktuelles</span>
+                <ul class="nested">
+                    <li>Pressemitteilungen</li>
+                    <li>News</li>
+                    <li>Veranstaltungen</li>
+                    <li>Projekte</li>
+                    <li>Corona</li>
+                    <li>Ukrainekrieg</li>
+                </ul>
+            </li>
+            <li><span class="caret">Fakult&#228ten</span>
+                <ul class="nested">
+                    <li>Fakult&#228t Wirtschafswissenschaften</li>
+                    <li>Fakult&#228t Architektur, Bau und Umwelt</li>
+                    <li>Fakult&#228t Gesellschaftswissenschaften</li>
+                    <li>Fakult&#228t Elektrotechnik und Informatik</li>
+                    <li>Fakult&#228t Natur und Technik</li>
+                </ul>
+            </li>
+            <li><span class="caret">Organisation</span>
+                <ul class="nested">
+                    <li>Rektorat</li>
+                    <li>Verwaltung</li>
+                    <li>Zentrale Einheiten</li>
+                    <li>Hochschul&#252;bergreifende Einheiten</li>
+                    <li>Gremien und Intressenvertretung</li>
+                    <li>Kultur</li>
+                    <li>Sport</li>
+                </ul>
+            </li>
+            <li>Profil der HSB</li>
+            <li>Arbeiten und Karriere an der HSB</li>
+            <li>Personensuche</li>
+            <li>Merchandise</li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+        });
+    }
+</script>
+
+</body>
+</html>
