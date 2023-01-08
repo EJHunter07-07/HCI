@@ -5,6 +5,22 @@ for (var i = 0;i<ul.childNodes.length;i++){
 */
 
 
+let time
+window.addEventListener("load", function() {
+    const clock = document.getElementById("time");
+    time = -1;
+    let intervalId;
+    function incrementTime() {
+        time++;
+        clock.textContent =
+            ("0" + Math.trunc(time / 60)).slice(-2) +
+            ":" + ("0" + (time % 60)).slice(-2);
+    }
+    incrementTime();
+    intervalId = setInterval(incrementTime, 1000);
+});
+
+
 const arr = [];
 
 const buttons = document.getElementsByTagName("li");

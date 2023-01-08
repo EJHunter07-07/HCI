@@ -3,48 +3,9 @@
 <head>
     <title>Frage 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        ul, #myUL {
-            list-style-type: none;
-        }
-
-        #myUL {
-            margin: 0;
-            padding: 0;
-        }
-
-        .caret {
-            cursor: pointer;
-            -webkit-user-select: none; /* Safari 3.1+ */
-            -moz-user-select: none; /* Firefox 2+ */
-            -ms-user-select: none; /* IE 10+ */
-            user-select: none;
-        }
-
-        .caret::before {
-            content: "\25B6";
-            color: black;
-            display: inline-block;
-            margin-right: 6px;
-        }
-
-        .caret-down::before {
-            -ms-transform: rotate(90deg); /* IE 9 */
-            -webkit-transform: rotate(90deg); /* Safari */'
-        transform: rotate(90deg);
-        }
-
-        .nested {
-            display: none;
-        }
-
-        .active {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <h2>Frage 1</h2>
 <p>Sie befinden sich auf der HSB Website und sind Student im 3. Semester und moechten Informationen ueber den Mensaplan finden. </p>
 <p>Nutzen sie die Navigation, welche hier Modelliert wurde.</p>
@@ -54,63 +15,63 @@
         <ul class="nested">
             <li><span class="caret">Studieng&#228;nge</span>
                 <ul class="nested">
-                    <li>Bachelor</li>
-                    <li>Master</li>
-                    <li>Dual studieren</li>
-                    <li>Berufsbegleitend studieren</li>
-                    <li>Flexibel studieren</li>
-                    <li>Summer School</li>
+                    <li><button>Bachelor</button></li>
+                    <li><button>Master</button></li>
+                    <li><button>Dual studieren</button></li>
+                    <li><button>Berufsbegleitend studieren</button></li>
+                    <li><button>Flexibel studieren</button></li>
+                    <li><button>Summer School</button></li>
                 </ul>
             </li>
             <li><span class="caret">Vor dem Studium</span>
                 <ul class="nested">
-                    <li>Schritt f&#252;r Schritt ins Studium</li>
-                    <li>Angebote f&#252;r Studieninteressierte</li>
-                    <li>Termine Studienorientierung</li>
-                    <li>Bewerbung und Zulassung</li>
-                    <li>Internationale Bewerbungen</li>
+                    <li><button>Schritt f&#252;r Schritt ins Studium</button></li>
+                    <li><button>Angebote f&#252;r Studieninteressierte</button></li>
+                    <li><button>Termine Studienorientierung</button></li>
+                    <li><button>Bewerbung und Zulassung</button></li>
+                    <li><button>Internationale Bewerbungen</button></li>
                 </ul>
             </li>
             <li><span class="caret">Im Studium</span>
                 <ul class="nested">
-                    <li>Infos f&#252;r Erstsemester</li>
-                    <li>Semestertermine und Fristen</li>
-                    <li>Zug&#228;nge und Portale f&#252;r Studierende</li>
-                    <li>Formales und Pr&#252;fung</li>
-                    <li>Ins Ausland gehen</li>
-                    <li>Erg&#228;nzende Angebote zum Studium</li>
+                    <li><button>Infos f&#252;r Erstsemester</button></li>
+                    <li><button>Semestertermine und Fristen</button></li>
+                    <li><button>Zug&#228;nge und Portale f&#252;r Studierende</button></li>
+                    <li><button>Formales und Pr&#252;fung</button></li>
+                    <li><button>Ins Ausland gehen</button></li>
+                    <li><button>Erg&#228;nzende Angebote zum Studium</button></li>
                 </ul>
             </li>
             <li><span class="caret">Nach dem Studium</span>
                 <ul class="nested">
-                    <li>Masterstudium</li>
-                    <li>Bewerbung und Berufseinstieg</li>
-                    <li>Gr&#228;ndung und Selbstst&#228;ndigkeit</li>
-                    <li>Berufliche Weiterbildung</li>
-                    <li>Infos f&#252;r Alumni und Alumnae</li>
-                    <li>Promotionen</li>
+                    <li><button>Masterstudium</button></li>
+                    <li><button>Bewerbung und Berufseinstieg</button></li>
+                    <li><button>Gr&#228;ndung und Selbstst&#228;ndigkeit</button></li>
+                    <li><button>Berufliche Weiterbildung</button></li>
+                    <li><button>Infos f&#252;r Alumni und Alumnae</button></li>
+                    <li><button>Promotionen</button></li>
                 </ul>
             </li>
             <li><span class="caret">Rund ums Studium</span>
                 <ul class="nested">
-                    <li>Studierendenleben</li>
-                    <li>Mitbestimmen & Gestalten</li>
-                    <li>Mensa & Co.</li>
-                    <li>Bibliothek</li>
-                    <li>Kultur</li>
-                    <li>Sport</li>
-                    <li>Glossar</li>
+                    <li><button>Studierendenleben</button></li>
+                    <li><button>Mitbestimmen & Gestalten</button></li>
+                    <li><button>Mensa & Co.</button></li>
+                    <li><button>Bibliothek</button></li>
+                    <li><button>Kultur</button></li>
+                    <li><button>Sport</button></li>
+                    <li><button>Glossar</button></li>
                 </ul>
             </li>
             <li><span class="caret">Beratung und Unterst&#252;tzung</span>
                 <ul class="nested">
-                    <li>Zentrale Studienberatung</li>
-                    <li>Pers&#246;nliche Themen</li>
-                    <li>Lernschwierigkeiten</li>
-                    <li>Zweifel am Studium</li>
-                    <li>Konflikte im Studium</li>
-                    <li>Ihr Beratungsnetzwerk an der HSB</li>
-                    <li>Studienfinazierung</li>
+                    <li><button>Zentrale Studienberatung</button></li>
+                    <li><button>Pers&#246;nliche Themen</button></li>
+                    <li><button>Lernschwierigkeiten</button></li>
+                    <li><button>Zweifel am Studium</button></li>
+                    <li><button>Konflikte im Studium</button></li>
+                    <li><button>Ihr Beratungsnetzwerk an der HSB</button></li>
+                    <li><button>Studienfinazierung</button></li>
                 </ul>
             </li>
         </ul>
@@ -119,83 +80,84 @@
         <ul class="nested">
             <li><span class="caret">Forschungs- und Transferprofil</span>
                 <ul class="nested">
-                    <li>Strategische Partnerschaften</li>
-                    <li>Forschungseinrichtungen</li>
-                    <li>Forschungsprojekte</li>
-                    <li>Patente</li>
+                    <li><button>Strategische Partnerschaften</button></li>
+                    <li><button>Forschungseinrichtungen</button></li>
+                    <li><button>Forschungsprojekte</button></li>
+                    <li><button>Patente</button></li>
                 </ul>
             </li>
             <li><span class="caret">Forschungcluster</span>
                 <ul class="nested">
-                    <li>Blue Science</li>
-                    <li>Digitale Transformation</li>
-                    <li>Dynamics, Tension and Extreme Events</li>
-                    <li>Lebensqualit&#228;t</li>
-                    <li>Luft- und Raumfahrt</li>
-                    <li>Region im Wandel
+                    <li><button>Blue Science</button></li>
+                    <li><button>Digitale Transformation</button></li>
+                    <li><button>Dynamics, Tension and Extreme Events</button></li>
+                    <li><button>Lebensqualit&#228;t</button></li>
+                    <li><button>Luft- und Raumfahrt</button></li>
+                    <li><button>Region im Wandel</button>
                     </li>
                 </ul>
             </li>
-            <li>Wissenschaftlicher Nachwuchs</li>
-            <li>Transfer und Kooperation</li>
-            <li>Forschungsservice</li>
-            <li>Gr&#252;ndungsservice</li>
+            <li><button>Wissenschaftlicher Nachwuchs</button></li>
+            <li><button>Transfer und Kooperation</button></li>
+            <li><button>Forschungsservice</button></li>
+            <li><button>Gr&#252;ndungsservice</button></li>
         </ul>
     </li>
     <li><span class="caret">Weiterbilden</span>
         <ul class="nested">
             <li><span class="caret">Themen</span>
                 <ul class="nested">
-                    <li>Wirtschaft und Management</li>
-                    <li>Digitalisierung</li>
-                    <li>Soziales</li>
+                    <li><button>Wirtschaft und Management</button></li>
+                    <li><button>Digitalisierung</button></li>
+                    <li><button>Soziales</button></li>
                 </ul>
             </li>
-            <li>Seminare und Zertifikate</li>
-            <li>Weiterbildende MBA und Master</li>
+            <li><button>Seminare und Zertifikate</button></li>
+            <li><button>Weiterbildende MBA und Master</button></li>
         </ul>
     </li>
     <li><span class="caret">Die HSB</span>
         <ul class="nested">
             <li><span class="caret">Aktuelles</span>
                 <ul class="nested">
-                    <li>Pressemitteilungen</li>
-                    <li>News</li>
-                    <li>Veranstaltungen</li>
-                    <li>Projekte</li>
-                    <li>Corona</li>
-                    <li>Ukrainekrieg</li>
+                    <li><button>Pressemitteilungen</button></li>
+                    <li><button>News</button></li>
+                    <li><button>Veranstaltungen</button></li>
+                    <li><button>Projekte</button></li>
+                    <li><button>Corona</button></li>
+                    <li><button>Ukrainekrieg</button></li>
                 </ul>
             </li>
             <li><span class="caret">Fakult&#228ten</span>
                 <ul class="nested">
-                    <li>Fakult&#228t Wirtschafswissenschaften</li>
-                    <li>Fakult&#228t Architektur, Bau und Umwelt</li>
-                    <li>Fakult&#228t Gesellschaftswissenschaften</li>
-                    <li>Fakult&#228t Elektrotechnik und Informatik</li>
-                    <li>Fakult&#228t Natur und Technik</li>
+                    <li><button>Fakult&#228t Wirtschafswissenschaften</button></li>
+                    <li><button>Fakult&#228t Architektur, Bau und Umwelt</button></li>
+                    <li><button>Fakult&#228t Gesellschaftswissenschaften</button></li>
+                    <li><button>Fakult&#228t Elektrotechnik und Informatik</button></li>
+                    <li><button>Fakult&#228t Natur und Technik</button></li>
                 </ul>
             </li>
             <li><span class="caret">Organisation</span>
                 <ul class="nested">
-                    <li>Rektorat</li>
-                    <li>Verwaltung</li>
-                    <li>Zentrale Einheiten</li>
-                    <li>Hochschul&#252;bergreifende Einheiten</li>
-                    <li>Gremien und Intressenvertretung</li>
-                    <li>Kultur</li>
-                    <li>Sport</li>
+                    <li><button>Rektorat</button></li>
+                    <li><button>Verwaltung</button></li>
+                    <li><button>Zentrale Einheiten</button></li>
+                    <li><button>Hochschul&#252;bergreifende Einheiten</button></li>
+                    <li><button>Gremien und Intressenvertretung</button></li>
+                    <li><button>Kultur</button></li>
+                    <li><button>Sport</button></li>
                 </ul>
             </li>
-            <li>Profil der HSB</li>
-            <li>Arbeiten und Karriere an der HSB</li>
-            <li>Personensuche</li>
-            <li>Merchandise</li>
+            <li><button>Profil der HSB</button></li>
+            <li><button>Arbeiten und Karriere an der HSB</button></li>
+            <li><button>Personensuche</button></li>
+            <li><button>Merchandise</button></li>
         </ul>
     </li>
 </ul>
-<a href="Frage2.html"><button >Weiter</button></a>
-
+<div id="time"></div>
+<button id="but">button</button>
+<script src="main.js"></script>
 <script>
     var toggler = document.getElementsByClassName("caret");
     var i;
@@ -206,8 +168,75 @@
             this.classList.toggle("caret-down");
         });
     }
+
+    let buttons2 = document.querySelectorAll("li button");
+    Array.prototype.forEach.call(buttons2, function(btn) {
+        if (btn.id !== "but") btn.addEventListener("click", handler, btn, false);
+    });
+    function handler(btn) {
+        
+        let result = window.confirm("Sind Sie sich sicher, dass das gesuchte Element unter diesem Punkt befindet");
+        if (result === true){
+            //arr.push(btn.target.innerHTML);
+            (function() {
+
+                arr.push(btn.target.innerHTML);
+                arr.push(btn.target.innerHTML);
+                arr.push(btn.target.innerHTML);
+
+                arr.push(time);
+
+                var links = document.querySelectorAll('a');
+
+
+                // Loop through all links
+                for (var i = 0; i < links.length; i++) {
+
+                    // Store links in variable
+                    arr.push(links[i]);
+
+                    // Works fine in console
+                    console.log(arr);
+                }
+
+
+                // Create text document — only saves 1st link in text doc
+                var textDoc = document.createElement('a');
+
+                textDoc.href = 'data:attachment/text,' + encodeURI(arr.join('\n-'));
+                textDoc.target = '_blank';
+                textDoc.download = 'Frage1.txt';
+                textDoc.click();
+
+            })();
+
+
+
+
+
+
+            window.location.href = "Frage2.html";
+
+        }
+        else{
+
+        }
+    }
+
+    /*document.get("button").onclick = function () {
+        window.confirm("Sind Sie sich sicher, dass das gesuchte Element unter diesem Punkt befindet");
+    };*/
+
+
+
+
+
+
+
+
+
 </script>
-<script src="main.js"></script>
+
 
 </body>
 </html>
