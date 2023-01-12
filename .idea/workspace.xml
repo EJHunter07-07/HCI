@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f4f3308-2bb6-4f67-87e5-286475a2d147" name="Changes" comment="" />
     <list id="399cd31a-9213-46ea-a8dc-de4a56305683" name="Changes by Nikolas" comment="" />
+    <list id="fd67509f-b230-41e5-82d3-6fa91cf44f72" name="Changes by ramon" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,16 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/untitled1/Frage1.html">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="6f4f3308-2bb6-4f67-87e5-286475a2d147" />
-        <range start1="47" end1="49" start2="48" end2="50" changelist="6f4f3308-2bb6-4f67-87e5-286475a2d147" />
-        <range start1="195" end1="195" start2="196" end2="197" changelist="6f4f3308-2bb6-4f67-87e5-286475a2d147" />
-        <range start1="207" end1="207" start2="209" end2="210" changelist="399cd31a-9213-46ea-a8dc-de4a56305683" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +39,28 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="JavaScript Debug.Frage4.html">
+    <configuration name="Frage1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/untitled1/Frage1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Frage3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/untitled1/Frage3.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Frage4.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/untitled1/Frage4.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Start.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/untitled1/Start.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Frage4.html" />
+        <item itemvalue="JavaScript Debug.Start.html" />
+        <item itemvalue="JavaScript Debug.Frage3.html" />
+        <item itemvalue="JavaScript Debug.Frage1.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +71,9 @@
       <updated>1671698208450</updated>
       <workItem from="1671698210845" duration="4488000" />
       <workItem from="1673190497629" duration="2000" />
+      <workItem from="1673190906290" duration="272000" />
+      <workItem from="1673513370728" duration="5212000" />
+      <workItem from="1673519316871" duration="363000" />
     </task>
     <servers />
   </component>

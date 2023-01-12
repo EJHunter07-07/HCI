@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Frage 1</h2>
-<p>Sie befinden sich auf der HSB Website und sind Student im 3. Semester und möchten Informationen über den Mensaplan finden. </p>
+<h2>Frage 4</h2>
+<p>Sie suchen Information über die Auslandssemster Beratung unter welchen Punkt würden sie sie finden</p>
 <p>Nutzen sie die Navigation, welche hier Modelliert wurde.</p>
 <ul id="myUL">
     <li><span class="caret">Informationen für...</span>
@@ -20,6 +20,7 @@
             <li><button>Presse und Medien</button></li>
             <li><button>Alumni</button></li>
             <li><button>Beschäftigte</button></li>
+            <li><button>Studierende</button></li>
         </ul>
     </li>
     <li><span class="caret">Studieren</span>
@@ -46,6 +47,7 @@
             <li><span class="caret">Im Studium</span>
                 <ul class="nested">
                     <li><button>Infos f&#252;r Erstsemester</button></li>
+                    <li><button>Infos für Studierende</button></li>
                     <li><button>Semestertermine und Fristen</button></li>
                     <li><button>Zug&#228;nge und Portale f&#252;r Studierende</button></li>
                     <li><button>Formales und Pr&#252;fung</button></li>
@@ -184,7 +186,7 @@
         if (btn.id !== "but") btn.addEventListener("click", handler, btn, false);
     });
     function handler(btn) {
-        
+
         let result = window.confirm("Sind Sie sich sicher, dass das gesuchte Element unter diesem Punkt befindet");
         if (result === true){
             //arr.push(btn.target.innerHTML);
@@ -208,10 +210,10 @@
 
                 textDoc.href = 'data:attachment/text,' + encodeURI(arr.join('\n-'));
                 textDoc.target = '_blank';
-                textDoc.download = 'Frage1.txt';
+                textDoc.download = 'Frage4.txt';
                 textDoc.click();
             })();
-            window.location.href = "Frage2.html";
+            window.location.href = "End.html";
 
         }
         else{

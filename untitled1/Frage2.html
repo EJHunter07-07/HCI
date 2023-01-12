@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Frage 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -8,10 +9,21 @@
 <body>
 
 <h2>Frage 2</h2>
-<p>Sie befinden sich auf der HSB Website und sind Student im 3. Semester und moechten Informationen ueber den Mensaplan finden. </p>
+<p>Sie befinden sich auf der HSB Website und sind Student im 3. Semester und möchten Informationen über den Veranstaltungsplan finden. </p>
 <p>Nutzen sie die Navigation, welche hier Modelliert wurde.</p>
 
 <ul id="myUL">
+    <li><span class="caret">Informationen für...</span>
+        <ul class="nested">
+            <li><button>Studieninteressierte</button></li>
+            <li><button>Erstsemester</button></li>
+            <li><button>Austauschstudenten</button></li>
+            <li><button>Unternehmen und Organisationen</button></li>
+            <li><button>Presse und Medien</button></li>
+            <li><button>Alumni</button></li>
+            <li><button>Beschäftigte</button></li>
+        </ul>
+    </li>
     <li><span class="caret">Studieren</span>
         <ul class="nested">
             <li><span class="caret">Studieng&#228;nge</span>
@@ -175,16 +187,13 @@
         if (btn.id !== "but") btn.addEventListener("click", handler, btn, false);
     });
     function handler(btn) {
-
         let result = window.confirm("Sind Sie sich sicher, dass das gesuchte Element unter diesem Punkt befindet");
         if (result === true){
             //arr.push(btn.target.innerHTML);
             (function() {
-
                 arr.push(btn.target.innerHTML);
                 arr.push(btn.target.innerHTML);
                 arr.push(btn.target.innerHTML);
-
                 arr.push(time);
 
                 var links = document.querySelectorAll('a');
@@ -210,11 +219,6 @@
                 textDoc.click();
 
             })();
-
-
-
-
-
 
             window.location.href = "Frage3.html";
 
