@@ -5,7 +5,27 @@
     <title>Title</title>
 </head>
 <body>
+<h2>Frage 5</h2>
+<p>Denken Sie, dass die Informationen für die Auslandssemster Beratung unter den Unterpunkten "Informationen für Studierende" zu finden sind </p>
+<p>Begründen sie ihre Entscheidung</p>
+<form id="Form">
+<textarea name="letzteFrage"></textarea>
+    <button id="gg" type="submit">Ende</button>
+</form>
 
 <button id="but">Ergebnis</button>
+<script>
+    let form = document.getElementById("Form");
+    function handleForm(event) {
+        event.preventDefault();
+        let textDoc = document.createElement('a');
+        console.log(name)
+        textDoc.href = 'data:attachment/text,' + event.target.letzteFrage.value;
+        textDoc.target = '_blank';
+        textDoc.download =  window.sessionStorage.getItem("name") + 'end.txt';
+        textDoc.click();
+    }
+    form.addEventListener('submit', handleForm);
+</script>
 </body>
 </html>

@@ -3,8 +3,6 @@ var ul = document.getElementById("myUL")
 for (var i = 0;i<ul.childNodes.length;i++){
 }
 */
-
-
 let time
 window.addEventListener("load", function() {
     const clock = document.getElementById("time");

@@ -210,7 +210,7 @@
 
                 textDoc.href = 'data:attachment/text,' + encodeURI(arr.join('\n-'));
                 textDoc.target = '_blank';
-                textDoc.download = 'Frage4.txt';
+                textDoc.download = window.sessionStorage.getItem("name") +'Frage4.txt';
                 textDoc.click();
             })();
             window.location.href = "End.html";

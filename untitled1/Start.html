@@ -5,6 +5,21 @@
     <title>Navigationstest</title>
 </head>
 <body>
-<a href="Frage1.html"><button >Test beginnen</button></a>
+<label>Name: </label>
+<form id="Form">
+<input type="text" name="name">
+    <button type="submit" >Test beginnen</button>
+</form>
+
+<script>
+    let form = document.getElementById("Form");
+    function handleForm(event) {
+        event.preventDefault();
+        window.sessionStorage.setItem("name", event.target.name.value)
+        window.location.href = "Frage1.html";
+    }
+    form.addEventListener('submit', handleForm);
+</script>
+<script src="main.js"></script>
 </body>
 </html>

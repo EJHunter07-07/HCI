@@ -205,10 +205,10 @@
                 }
                 // Create text document — only saves 1st link in text doc
                 var textDoc = document.createElement('a');
-
+                console.log(name)
                 textDoc.href = 'data:attachment/text,' + encodeURI(arr.join('\n-'));
                 textDoc.target = '_blank';
-                textDoc.download = 'Frage1.txt';
+                textDoc.download =  window.sessionStorage.getItem("name") + 'Frage1.txt';
                 textDoc.click();
             })();
             window.location.href = "Frage2.html";

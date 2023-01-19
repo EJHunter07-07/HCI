@@ -215,7 +215,7 @@
 
                 textDoc.href = 'data:attachment/text,' + encodeURI(arr.join('\n-'));
                 textDoc.target = '_blank';
-                textDoc.download = 'Frage2.txt';
+                textDoc.download = window.sessionStorage.getItem("name") +'Frage2.txt';
                 textDoc.click();
 
             })();

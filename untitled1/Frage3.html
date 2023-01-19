@@ -10,6 +10,7 @@
 <h2>Frage 3</h2>
 <p>Sie befinden sich ein weiteres Mal auf der HSB Website und sind Student im 3. Semester und möchten Informationen über den Veranstaltungsplan finden. </p>
 <p>Nutzen sie die überarbeitete Navigation, welche hier Modelliert wurde.</p>
+<p>Verwenden Sie einen anderen Weg, als in der vorherigen Frage</p>
 <ul id="myUL">
     <li><span class="caret">Informationen für...</span>
         <ul class="nested">
@@ -210,7 +211,7 @@
 
                 textDoc.href = 'data:attachment/text,' + encodeURI(arr.join('\n-'));
                 textDoc.target = '_blank';
-                textDoc.download = 'Frage3.txt';
+                textDoc.download = window.sessionStorage.getItem("name") +'Frage3.txt';
                 textDoc.click();
             })();
             window.location.href = "Frage4.html";

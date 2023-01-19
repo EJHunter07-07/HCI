@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f4f3308-2bb6-4f67-87e5-286475a2d147" name="Changes" comment="" />
-    <list id="399cd31a-9213-46ea-a8dc-de4a56305683" name="Changes by Nikolas" comment="" />
-    <list id="fd67509f-b230-41e5-82d3-6fa91cf44f72" name="Changes by ramon" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +37,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JavaScript Debug.Frage4.html">
+  <component name="RunManager" selected="JavaScript Debug.Start.html">
     <configuration name="Frage1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/untitled1/Frage1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -54,8 +52,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Frage4.html" />
         <item itemvalue="JavaScript Debug.Start.html" />
+        <item itemvalue="JavaScript Debug.Frage4.html" />
         <item itemvalue="JavaScript Debug.Frage3.html" />
         <item itemvalue="JavaScript Debug.Frage1.html" />
       </list>
@@ -73,7 +71,8 @@
       <workItem from="1673190497629" duration="2000" />
       <workItem from="1673190906290" duration="272000" />
       <workItem from="1673513370728" duration="5212000" />
-      <workItem from="1673519316871" duration="363000" />
+      <workItem from="1673519316871" duration="482000" />
+      <workItem from="1674117998369" duration="5054000" />
     </task>
     <servers />
   </component>
